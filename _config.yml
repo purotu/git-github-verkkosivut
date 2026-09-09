@@ -1,7 +1,7 @@
 title: Git ja GitHub -kurssi
 description: Opetusmateriaalia Gitin ja GitHubin käyttöön
-baseurl: "" # aliohjelmapolku, esim. "/git-github-verkkosivut" - päivitä tämä repon nimeen kun otat GitHub Pagesin käyttöön
-url: "" # esim. "https://kayttajatunnus.github.io"
+baseurl: "/git-github-verkkosivut"
+url: "https://purotu.github.io"
 
 remote_theme: just-the-docs/just-the-docs
 
@@ -14,13 +14,13 @@ color_scheme: light
 # Ylätason navigointi
 nav_external_links:
   - title: Materiaalin lähdekoodi (GitHub)
-    url: https://github.com/OMA_KAYTTAJATUNNUS/git-github-verkkosivut
+    url: https://github.com/purotu/git-github-verkkosivut
     opens_in_new_tab: true
 
 # Näytä "Muokkaa tätä sivua GitHubissa" -linkki jokaisella sivulla
 gh_edit_link: true
 gh_edit_link_text: "Muokkaa tätä sivua GitHubissa"
-gh_edit_repository: "https://github.com/OMA_KAYTTAJATUNNUS/git-github-verkkosivut"
+gh_edit_repository: "https://github.com/purotu/git-github-verkkosivut"
 gh_edit_branch: "main"
 gh_edit_view_mode: "tree"
 
