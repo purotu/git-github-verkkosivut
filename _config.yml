@@ -5,11 +5,14 @@ url: "https://purotu.github.io"
 
 remote_theme: just-the-docs/just-the-docs
 
+# Logo näkyy sivuvalikon yläreunassa
+logo: "/assets/images/it-velhot-logo.png"
+
 # Hakutoiminto sivuston sisällölle
 search_enabled: true
 
-# Yläpalkin/valikon väri (vaihtoehdot: https://just-the-docs.com/docs/customization/#color-schemes)
-color_scheme: light
+# Oma tumma väriteema, ks. _sass/color_schemes/custom.scss
+color_scheme: custom
 
 # Ylätason navigointi
 nav_external_links:
