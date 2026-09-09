@@ -6,7 +6,7 @@ url: "https://purotu.github.io"
 remote_theme: just-the-docs/just-the-docs
 
 # Logo näkyy sivuvalikon yläreunassa
-logo: "/assets/images/it-velhot-logo.png"
+logo: "/assets/images/it-velhot.png"
 
 # Hakutoiminto sivuston sisällölle
 search_enabled: true
