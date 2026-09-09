@@ -17,3 +17,8 @@
 .theme-toggle-btn:hover {
   background: rgba(128, 128, 128, 0.15);
 }
+
+// Yläpalkki pidetään aina tummanharmaana, jotta vaalea logo erottuu myös vaaleassa teemassa
+.site-header {
+  background-color: $grey-dk-250;
+}
