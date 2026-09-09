@@ -1,28 +1,34 @@
-<button id="theme-toggle" type="button" class="theme-toggle-btn">
-  <span id="theme-toggle-label">Vaihda vaaleaan teemaan</span>
+<button type="button" class="theme-toggle-btn">
+  <span class="theme-toggle-label">Vaihda vaaleaan teemaan</span>
 </button>
 <script>
 (function() {
   var STORAGE_KEY = 'jtd-color-scheme';
-  var btn = document.getElementById('theme-toggle');
-  var label = document.getElementById('theme-toggle-label');
 
   function current() {
     return localStorage.getItem(STORAGE_KEY) || 'custom';
   }
 
-  function updateLabel() {
-    label.textContent = current() === 'light' ? 'Vaihda tummaan teemaan' : 'Vaihda vaaleaan teemaan';
+  function updateLabels() {
+    var text = current() === 'light' ? 'Vaihda tummaan teemaan' : 'Vaihda vaaleaan teemaan';
+    document.querySelectorAll('.theme-toggle-label').forEach(function(el) {
+      el.textContent = text;
+    });
   }
 
-  updateLabel();
+  updateLabels();
 
-  btn.addEventListener('click', function() {
-    var next = current() === 'light' ? 'custom' : 'light';
-    localStorage.setItem(STORAGE_KEY, next);
-    jtd.setTheme(next);
-    updateLabel();
-    console.log('Theme changed to', next);
+  // Just the Docs renderöi tämän includen kahdesti (työpöytä + mobiili), joten sidotaan
+  // klikkauskuuntelija jokaiseen nappiin vain kerran, ettei sama klikkaus kumoa itseään.
+  document.querySelectorAll('.theme-toggle-btn').forEach(function(btn) {
+    if (btn.dataset.themeToggleBound) return;
+    btn.dataset.themeToggleBound = 'true';
+    btn.addEventListener('click', function() {
+      var next = current() === 'light' ? 'custom' : 'light';
+      localStorage.setItem(STORAGE_KEY, next);
+      jtd.setTheme(next);
+      updateLabels();
+    });
   });
 })();
 </script>
