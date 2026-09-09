@@ -1,7 +1,7 @@
 ---
-title: 5. Lisää Gitin peruskomentoja - status, log, diff
+title: 6. Gitin peruskomentoja - status, log, diff
 parent: Oppitunnit
-nav_order: 5
+nav_order: 6
 ---
 
 # Lisää Gitin peruskomentoja: status, log, diff

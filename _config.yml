@@ -31,6 +31,15 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
+# remote_theme ei aseta teeman oletuslayoutia automaattisesti (toisin kuin
+# gem-pohjainen teema), joten se pitää asettaa itse - koskee kaikkia sivuja,
+# elleivät ne itse määritä front matterissa toisin (esim. index.md: layout: home)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
 exclude:
   - Gemfile
   - Gemfile.lock
