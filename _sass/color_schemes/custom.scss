@@ -13,9 +13,9 @@ $body-heading-color: $grey-lt-000;
 $body-text-color: #cfd2d6;
 $nav-child-link-color: $grey-lt-100;
 
-$body-link-color: $blue-000;
-$link-color: $blue-000;
-$btn-primary-color: $blue-000;
+$body-link-color: lighten($blue-000, 15%);
+$link-color: lighten($blue-000, 15%);
+$btn-primary-color: lighten($blue-000, 15%);
 $base-button-color: $grey-dk-250;
 $feedback-color: darken($sidebar-color, 3%);
 
