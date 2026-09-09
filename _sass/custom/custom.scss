@@ -1,0 +1,19 @@
+// Teemanvaihtopainikkeen tyyli (ks. _includes/nav_footer_custom.html)
+.theme-toggle-btn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: $border;
+  border-color: $border-color;
+  border-radius: $border-radius;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(128, 128, 128, 0.15);
+}

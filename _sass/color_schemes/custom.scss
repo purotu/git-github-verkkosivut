@@ -1,10 +1,13 @@
 // Oma tumma väriteema Ubuntu-fontilla ja vaaleanharmaalla tekstillä (luettavuus tummalla taustalla)
 
 $body-background-color: $grey-dk-300;
-$sidebar-color: $grey-dk-250;
+$sidebar-color: $grey-dk-300;
 $search-background-color: $grey-dk-250;
 $table-background-color: $grey-dk-250;
 $code-background-color: $grey-dk-250;
+
+// sama väri kuin taustat -> valikon ja yläpalkin reunaviivat katoavat näkyvistä
+$border-color: $grey-dk-300;
 
 $body-heading-color: $grey-lt-000;
 $body-text-color: #cfd2d6;
